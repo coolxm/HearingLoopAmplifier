@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "1187d58b-5bff-4ac8-89f7-59cd1d310934")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 135.89 27.94)
+		(size 85.09 151.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "23e3ffa2-9d23-4864-a9b4-ed445dbced9e")
+		(property "Sheetname" "Reciever"
+			(at 135.89 27.2284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Reciever.kicad_sch"
+			(at 135.89 179.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "AmplifierCircuit"
+				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 27.94)
+		(size 105.41 151.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5958d90b-b390-4fdf-a917-7468261062da")
+		(property "Sheetname" "Transmitter"
+			(at 22.86 27.2284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Transmitter.kicad_sch"
+			(at 22.86 179.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "AmplifierCircuit"
+				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
