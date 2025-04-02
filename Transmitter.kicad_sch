@@ -841,10 +841,22 @@
 		(uuid "90f10944-ff77-4e5d-823a-12fa264aea5b")
 	)
 	(junction
+		(at 44.45 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9605ef46-706a-408c-a8c5-38b12f02f0f5")
+	)
+	(junction
 		(at 90.17 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db37faaa-2eb9-409e-af48-ce33da1de4cf")
+	)
+	(junction
+		(at 44.45 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1f9d5af-f45b-475a-b616-8806f46a0d5b")
 	)
 	(junction
 		(at 114.3 105.41)
@@ -864,7 +876,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 39.37) (xy 44.45 45.72)
+			(xy 44.45 39.37) (xy 44.45 43.18)
 		)
 		(stroke
 			(width 0)
@@ -924,6 +936,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 43.18) (xy 48.26 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51ceba88-a49b-4bd3-bd6c-ff45e9576423")
+	)
+	(wire
+		(pts
 			(xy 165.1 152.4) (xy 165.1 149.86)
 		)
 		(stroke
@@ -931,6 +953,16 @@
 			(type default)
 		)
 		(uuid "62122512-1e03-48f8-9c88-be53ddf66773")
+	)
+	(wire
+		(pts
+			(xy 44.45 43.18) (xy 44.45 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68eb6873-7544-410b-a5c9-7417ae2adaa0")
 	)
 	(wire
 		(pts
@@ -964,7 +996,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 48.26) (xy 44.45 53.34)
+			(xy 44.45 48.26) (xy 44.45 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1094,6 +1126,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 50.8) (xy 44.45 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abfc948c-ab09-4808-a876-e83cc01a5edb")
+	)
+	(wire
+		(pts
 			(xy 199.39 113.03) (xy 205.74 113.03)
 		)
 		(stroke
@@ -1161,6 +1203,16 @@
 			(type default)
 		)
 		(uuid "d184f231-f8c1-426f-9ae6-ca89cafd3438")
+	)
+	(wire
+		(pts
+			(xy 44.45 50.8) (xy 44.45 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1ce2f2b-65f0-495e-914f-0aa2f55fdb5c")
 	)
 	(wire
 		(pts
@@ -1278,7 +1330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1528e046-ebff-4ced-90ba-dd689c91633f")
-		(property "Reference" "TransmitCoil"
+		(property "Reference" "TransmitCoil1"
 			(at 212.09 113.0299 0)
 			(effects
 				(font
@@ -1296,7 +1348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 210.82 113.03 0)
 			(effects
 				(font
@@ -1332,7 +1384,7 @@
 		(instances
 			(project "AmplifierCircuit"
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/5958d90b-b390-4fdf-a917-7468261062da"
-					(reference "TransmitCoil")
+					(reference "TransmitCoil1")
 					(unit 1)
 				)
 			)
@@ -1366,7 +1418,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 163.322 133.35 90)
 			(effects
 				(font
@@ -1436,7 +1488,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm"
 			(at 166.0652 149.86 0)
 			(effects
 				(font
@@ -1506,7 +1558,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm"
 			(at 91.1352 73.66 0)
 			(effects
 				(font
@@ -1776,7 +1828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 112.522 69.85 90)
 			(effects
 				(font
@@ -1828,7 +1880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58050183-03e3-41df-96dd-5c090945aaed")
-		(property "Reference" "SignalSource"
+		(property "Reference" "SignalSource1"
 			(at 102.235 115.57 0)
 			(effects
 				(font
@@ -1844,7 +1896,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 101.6 123.19 0)
 			(effects
 				(font
@@ -1880,7 +1932,7 @@
 		(instances
 			(project ""
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/5958d90b-b390-4fdf-a917-7468261062da"
-					(reference "SignalSource")
+					(reference "SignalSource1")
 					(unit 1)
 				)
 			)
@@ -2019,6 +2071,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 48.26 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c81c190-446f-4f07-b8e2-91a4e986b38d")
+		(property "Reference" "C10"
+			(at 52.07 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 52.07 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm"
+			(at 49.2252 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c3cfbdd-748e-4d30-a75f-cefad0c4c78e")
+		)
+		(pin "2"
+			(uuid "26182522-3dd1-43af-9958-e6efe41705cb")
+		)
+		(instances
+			(project "AmplifierCircuit"
+				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/5958d90b-b390-4fdf-a917-7468261062da"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 176.53 114.3 0)
 		(unit 1)
@@ -2046,7 +2168,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 174.752 114.3 90)
 			(effects
 				(font
@@ -2248,7 +2370,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 99.822 69.85 90)
 			(effects
 				(font
@@ -2318,7 +2440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm"
 			(at 115.2652 115.57 0)
 			(effects
 				(font
@@ -2519,7 +2641,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
 			(at 154.94 107.95 0)
 			(effects
 				(font
@@ -2598,7 +2720,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
 			(at 60.96 46.99 0)
 			(effects
 				(font
@@ -2677,7 +2799,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 99.822 82.55 90)
 			(effects
 				(font
