@@ -1330,7 +1330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1528e046-ebff-4ced-90ba-dd689c91633f")
-		(property "Reference" "TransmitCoil1"
+		(property "Reference" "LTx1"
 			(at 212.09 113.0299 0)
 			(effects
 				(font
@@ -1384,7 +1384,7 @@
 		(instances
 			(project "AmplifierCircuit"
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/5958d90b-b390-4fdf-a917-7468261062da"
-					(reference "TransmitCoil1")
+					(reference "LTx1")
 					(unit 1)
 				)
 			)
@@ -1742,7 +1742,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d5934b7-7450-4efd-97d1-21eea036c079")
-		(property "Reference" "J1"
+		(property "Reference" "VinTx1"
 			(at 36.195 40.64 0)
 			(effects
 				(font
@@ -1794,7 +1794,7 @@
 		(instances
 			(project ""
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/5958d90b-b390-4fdf-a917-7468261062da"
-					(reference "J1")
+					(reference "VinTx1")
 					(unit 1)
 				)
 			)
@@ -1880,7 +1880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58050183-03e3-41df-96dd-5c090945aaed")
-		(property "Reference" "SignalSource1"
+		(property "Reference" "Source1"
 			(at 102.235 115.57 0)
 			(effects
 				(font
@@ -1932,7 +1932,7 @@
 		(instances
 			(project ""
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/5958d90b-b390-4fdf-a917-7468261062da"
-					(reference "SignalSource1")
+					(reference "Source1")
 					(unit 1)
 				)
 			)
@@ -2641,7 +2641,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 154.94 107.95 0)
 			(effects
 				(font
@@ -2720,7 +2720,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
 			(at 60.96 46.99 0)
 			(effects
 				(font

@@ -433,17 +433,16 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "HearingLoopLibrary:OPA209"
+		(symbol "HearingLoopLibrary:opa209"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 8.636 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" ""
@@ -454,7 +453,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -481,10 +480,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "OPA209_1_1"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "opa209_1_1"
 				(polyline
 					(pts
-						(xy 0 6.35) (xy 0 -6.35) (xy 11.43 0) (xy 0 6.35)
+						(xy -2.54 6.35) (xy -2.54 -6.35) (xy 8.89 0) (xy -2.54 6.35)
 					)
 					(stroke
 						(width 0)
@@ -495,7 +502,7 @@
 					)
 				)
 				(pin input line
-					(at -2.54 2.54 0)
+					(at -5.08 2.54 0)
 					(length 2.54)
 					(name "+"
 						(effects
@@ -513,7 +520,7 @@
 					)
 				)
 				(pin input line
-					(at -2.54 -2.54 0)
+					(at -5.08 -2.54 0)
 					(length 2.54)
 					(name "-"
 						(effects
@@ -522,7 +529,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -531,7 +538,7 @@
 					)
 				)
 				(pin output line
-					(at 13.97 0 180)
+					(at 11.43 0 180)
 					(length 2.54)
 					(name ""
 						(effects
@@ -540,7 +547,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -549,18 +556,18 @@
 					)
 				)
 			)
-			(symbol "OPA209_2_1"
+			(symbol "opa209_2_1"
 				(pin power_in line
-					(at 0 10.16 270)
+					(at 0 8.89 270)
 					(length 2.54)
-					(name "VDD"
+					(name "V+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -571,14 +578,14 @@
 				(pin power_in line
 					(at 0 -8.89 90)
 					(length 2.54)
-					(name "GND"
+					(name "V-"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1291,84 +1298,6 @@
 		(uuid "f5000c02-a5b4-4634-820b-0b1d44341ac8")
 	)
 	(symbol
-		(lib_id "HearingLoopLibrary:OPA209")
-		(at 156.21 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06c6eeda-ca9b-4fd4-b4f6-c776d7cb54a4")
-		(property "Reference" "U2"
-			(at 156.21 95.504 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "~"
-			(at 161.925 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 156.21 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 156.21 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "25d1e741-f7d9-4ed3-9957-36741a66b998")
-		)
-		(pin "7"
-			(uuid "641cbf42-974e-4d41-9c6a-ac687a4ab79f")
-		)
-		(pin "4"
-			(uuid "85a19b3f-c9b8-4eed-8e29-5accb770bbf8")
-		)
-		(pin "6"
-			(uuid "78c2d7e4-b86e-4249-8696-236f387104b7")
-		)
-		(pin "3"
-			(uuid "07f6b243-1f4a-4702-98ef-406b0433a042")
-		)
-		(instances
-			(project ""
-				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND2")
 		(at 45.72 49.53 0)
 		(unit 1)
@@ -1646,7 +1575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "499b6e3e-492f-4713-a6d1-aeef391447a9")
-		(property "Reference" "PowerIn1"
+		(property "Reference" "VinRx1"
 			(at 34.925 36.83 0)
 			(effects
 				(font
@@ -1698,7 +1627,7 @@
 		(instances
 			(project "AmplifierCircuit"
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
-					(reference "PowerIn1")
+					(reference "VinRx1")
 					(unit 1)
 				)
 			)
@@ -1854,7 +1783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58d24c9f-656e-4b38-a554-1601389c0c9c")
-		(property "Reference" "RecieveCoil1"
+		(property "Reference" "LRx1"
 			(at 103.505 111.76 0)
 			(effects
 				(font
@@ -1906,7 +1835,7 @@
 		(instances
 			(project "AmplifierCircuit"
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
-					(reference "RecieveCoil1")
+					(reference "LRx1")
 					(unit 1)
 				)
 			)
@@ -1914,16 +1843,16 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 62.23 33.02 0)
+		(at 62.23 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6718a2cd-a0f7-4441-a926-43cdbb1c341d")
+		(uuid "786aa523-a703-44f1-ab43-de210993d2a1")
 		(property "Reference" "#PWR011"
-			(at 62.23 36.83 0)
+			(at 62.23 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1932,7 +1861,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 62.23 27.94 0)
+			(at 62.23 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1940,7 +1869,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 33.02 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,7 +1878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 33.02 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,7 +1887,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 62.23 33.02 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1967,7 +1896,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ddf550f-e5ce-4f79-9f4e-0a71295d5b24")
+			(uuid "686de36f-bfe1-4d71-9f91-70224a301de4")
 		)
 		(instances
 			(project "AmplifierCircuit"
@@ -2039,72 +1968,6 @@
 			(project ""
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND2")
-		(at 62.23 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d0522a8-30f0-4e0e-bd4d-dfce143585ce")
-		(property "Reference" "#PWR014"
-			(at 62.23 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND2"
-			(at 62.23 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 62.23 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4cad9ae8-ad63-4b83-9fc2-3b253563b0cc")
-		)
-		(instances
-			(project "AmplifierCircuit"
-				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -2243,6 +2106,72 @@
 			(project "AmplifierCircuit"
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND2")
+		(at 62.23 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9424dd54-28cb-4300-b26f-03f61c6c9ced")
+		(property "Reference" "#PWR014"
+			(at 62.23 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND2"
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
+			(at 62.23 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "229c315c-5fa1-4214-ba3b-6478d87143a4")
+		)
+		(instances
+			(project "AmplifierCircuit"
+				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -2591,6 +2520,83 @@
 		)
 	)
 	(symbol
+		(lib_id "HearingLoopLibrary:opa209")
+		(at 158.75 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c631f665-f19d-4380-9fa9-610288cbac0a")
+		(property "Reference" "U2"
+			(at 161.925 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 161.925 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
+			(at 158.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 158.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50cda6b3-4fcc-4c1f-88f5-c05666477b33")
+		)
+		(pin "5"
+			(uuid "039773b2-042d-4eff-8b0a-56668673602d")
+		)
+		(pin "3"
+			(uuid "f233f0d4-9fe0-4013-b754-c9ac4e3b7985")
+		)
+		(pin "4"
+			(uuid "f0ecc6e9-6711-4bde-858f-b2dc6e38a518")
+		)
+		(pin "2"
+			(uuid "46470890-8c56-4498-91a4-b6dea6714f39")
+		)
+		(instances
+			(project ""
+				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 166.37 142.24 0)
 		(unit 1)
@@ -2670,7 +2676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf0e8ab0-24b5-4f0d-bd90-104a6c3f9930")
-		(property "Reference" "AudioOut1"
+		(property "Reference" "Out1"
 			(at 243.84 101.5999 0)
 			(effects
 				(font
@@ -2724,87 +2730,8 @@
 		(instances
 			(project "AmplifierCircuit"
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
-					(reference "AudioOut1")
+					(reference "Out1")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "HearingLoopLibrary:OPA209")
-		(at 62.23 43.18 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4c84da8-6fc5-4355-8078-d79c09c08992")
-		(property "Reference" "U2"
-			(at 62.23 34.544 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "~"
-			(at 63.5 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 62.23 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 62.23 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "25d1e741-f7d9-4ed3-9957-36741a66b998")
-		)
-		(pin "7"
-			(uuid "641cbf42-974e-4d41-9c6a-ac687a4ab79f")
-		)
-		(pin "4"
-			(uuid "85a19b3f-c9b8-4eed-8e29-5accb770bbf8")
-		)
-		(pin "6"
-			(uuid "78c2d7e4-b86e-4249-8696-236f387104b7")
-		)
-		(pin "3"
-			(uuid "07f6b243-1f4a-4702-98ef-406b0433a042")
-		)
-		(instances
-			(project ""
-				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
-					(reference "U2")
-					(unit 2)
 				)
 			)
 		)
@@ -2875,6 +2802,85 @@
 				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
 					(reference "C5")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HearingLoopLibrary:opa209")
+		(at 62.23 43.18 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcca7d36-d7e7-4f98-abeb-18fc01b77d1d")
+		(property "Reference" "U2"
+			(at 63.5 42.5449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 63.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
+			(at 62.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50cda6b3-4fcc-4c1f-88f5-c05666477b33")
+		)
+		(pin "5"
+			(uuid "039773b2-042d-4eff-8b0a-56668673602d")
+		)
+		(pin "3"
+			(uuid "f233f0d4-9fe0-4013-b754-c9ac4e3b7985")
+		)
+		(pin "4"
+			(uuid "f0ecc6e9-6711-4bde-858f-b2dc6e38a518")
+		)
+		(pin "2"
+			(uuid "46470890-8c56-4498-91a4-b6dea6714f39")
+		)
+		(instances
+			(project ""
+				(path "/1187d58b-5bff-4ac8-89f7-59cd1d310934/23e3ffa2-9d23-4864-a9b4-ed445dbced9e"
+					(reference "U2")
+					(unit 2)
 				)
 			)
 		)
